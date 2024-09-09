@@ -1,13 +1,13 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Start building awesome documentation and set up your frontend in under 10 minutes'
 ---
 
-## Setup your development
+## Setup your development environment
 
-Learn how to update your docs locally and deploy them to the public.
+Learn how to update your docs locally, set up your frontend repo, and deploy your changes.
 
-### Edit and preview
+### Documentation setup
 
 <AccordionGroup>
   <Accordion icon="github" title="Clone your docs locally">
@@ -18,13 +18,39 @@ Learn how to update your docs locally and deploy them to the public.
     [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
     in your terminal.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
+  <Accordion icon="rectangle-terminal" title="Preview documentation changes">
     Previewing helps you make sure your changes look as intended. We built a
     command line interface to render these changes locally. 1. Install the
     [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
     documentation changes locally with this command: ``` npm i -g mintlify ```
     2. Run the following command at the root of your documentation (where
     `mint.json` is): ``` mintlify dev ```
+  </Accordion>
+</AccordionGroup>
+
+### Frontend setup
+
+<AccordionGroup>
+  <Accordion icon="code-branch" title="Clone the frontend repository">
+    Clone the frontend repository to your local machine:
+    ```bash
+    git clone https://github.com/your-org/awesome-frontend.git
+    cd awesome-frontend
+    ```
+  </Accordion>
+  <Accordion icon="box" title="Install dependencies">
+    Install the project dependencies using npm:
+    ```bash
+    npm install --force
+    ```
+    Note: We're using `--force` to ensure all dependencies are installed correctly.
+  </Accordion>
+  <Accordion icon="play" title="Run the development server">
+    Start the development server:
+    ```bash
+    npm start
+    ```
+    This will start your React application, typically at `http://localhost:3000`.
   </Accordion>
 </AccordionGroup>
 
@@ -49,9 +75,9 @@ Learn how to update your docs locally and deploy them to the public.
 
 </AccordionGroup>
 
-## Update your docs
+## Update your docs and frontend
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+Add content directly in your MDX files for documentation. For the frontend, you can update React components using JavaScript and style them with Tailwind CSS.
 
 <CardGroup>
 
@@ -83,4 +109,21 @@ Add content directly in your files with MDX syntax and React components. You can
   Keep your docs on your own website's subdomain.
 </Card>
 
+<Card
+  title="Customize UI Components"
+  icon="palette"
+  href="/frontend/components"
+>
+  Learn how to create and style reusable React components with Tailwind CSS.
+</Card>
+
 </CardGroup>
+
+## Tech Stack Overview
+
+- **Documentation**: MDX
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **Language**: JavaScript
+
+For more detailed information on working with these technologies in our project, please refer to the respective sections in the documentation.
